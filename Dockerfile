@@ -6,3 +6,6 @@ WORKDIR /app
 RUN apk add --no-cache nodejs npm
 RUN npm install -g pnpm
 RUN apk add --no-cache make
+
+# add open-ssh
+RUN apk add --no-cache openssh
